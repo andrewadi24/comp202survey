@@ -1,73 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Please feel in this survey for my information systems class, thank you">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1280px-YouTube_full-color_icon_%282017%29.svg.png" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://dekatutorial.github.io/17klikaku/SubsYT.js"></script>
-    <link rel="stylesheet" href="https://dekatutorial.github.io/17klikaku/SubsYT.css" />
-    <title>COMP2022 Survey</title>
-  </head>
-  <style>
-    .hover:hover {
-  cursor: pointer;
-}
-  </style>
-  <body>
-    <script> popupku(); </script>
-    <div class="preload"><p>Loading survey . . .</p></div>
-    <div class="ucapan">
 
-      <p>Press me to start the survey!</p>
-      <p>Selamat ulang tahun Mel !</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Please feel in this survey for my information systems class, thank you">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon"
+    href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1280px-YouTube_full-color_icon_%282017%29.svg.png"
+    type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://dekatutorial.github.io/17klikaku/SubsYT.js"></script>
+  <link rel="stylesheet" href="https://dekatutorial.github.io/17klikaku/SubsYT.css" />
+  <title>COMP2022 Survey</title>
+</head>
+<style>
+  .hover:hover {
+    cursor: pointer;
+  }
+
+  .card {
+    border: 3px solid black;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .card p, h1, h2, h3 {
+    text-align: left;
+    padding: 5px;
+  }
+</style>
+
+<body>
+  <script> popupku(); </script>
+  <div class="preload">
+    <p>Loading survey . . .</p>
+  </div>
+  <div class="ucapan">
+
+    <p>Press me to start the survey!</p>
+    <!-- <p>Selamat ulang tahun Mel !</p>
       <p>Semoga...</p>
       <p>Tambah beriman</p>
       <p>Sehat selalu</p>
-      <p>Selalu happy</p>
-    </div>
-    <script>
+      <p>Selalu happy</p> -->
+  </div>
+  <script>
 
-      musik = "music.mp3";
-      foto = "foto.jpg";
-      txtFoto = "";
-      nomorWA = "";
+    musik = "music.mp3";
+    foto = "foto.jpg";
+    txtFoto = "";
+    nomorWA = "";
 
-      stiker = "";
+    stiker = "";
 
-    </script>
-    <div class="content"></div>
-    <div class="panda">
-      <p>Click me</p>
-      <br /><img class="stiker hover" src="https://dekatutorial.github.io/17klikaku/SubsYT.gif" alt=""  onclick="tampilModal()"/>
-      
-    </div>
+  </script>
+  <div class="content"></div>
+  <div class="panda">
+    <p>Click me</p>
+    <br /><img class="stiker hover" src="https://dekatutorial.github.io/17klikaku/SubsYT.gif" alt=""
+      onclick="tampilModal()" />
 
-    <div class="container-modal">
-      <div class="bg"></div>
-      <div class="lope"></div>
-      <div class="modal">
-        <div class="frame">
-          <img class="foto" src="./foto.jpg" alt="" />
+  </div>
+
+  <div class="container-modal">
+    <div class="bg"></div>
+    <div class="lope"></div>
+    <div class="modal">
+      <!-- <div class="frame">
+          
             <p class="txtFrame">Selamat Ulang tahun ya mel! </p>
+        </div> -->
+      <div class="letter frame">
+        <img class="foto" src="./foto.jpg" alt="" />
+        <div class="card">
+          <h1>Selamat ulang tahun Mel!!</h1>
+          <h3>gw mau memberitahu lu betapa berterima kasih gw bisa kenal lu. Gw harap tahun
+             ini bakal penuh dengan cinta, tawa, dan semua keinginan hati.</h3>
+          <!-- <p>gw mau mengambil sebentar untuk memberitahu lu betapa berterima kasih gw bisa kenal lu. lu  membawa begitu banyak kegembiraan dan positivity ke dalam kehidupan ini, dan gw benar-benar bersyukur bisa mengenal dan menjadi teman lu. Gw harap tahun depan penuh dengan cinta, tawa, dan semua keinginan hati.</p> -->
+          <p>Lots of love, Andrew Adi</p>
         </div>
       </div>
     </div>
-    <script>
-      // Jangan hapus kode dibawah ini!
-      musik = new Audio(musik);
-      musik.loop = false;
-      musik.autoplay = true;
-      ucapan();
-      buatLope();
-      makan();
-    </script>
-  </body>
+  </div>
+  <script>
+    // Jangan hapus kode dibawah ini!
+    musik = new Audio(musik);
+    musik.loop = false;
+    musik.autoplay = true;
+    ucapan();
+    buatLope();
+    makan();
+  </script>
+</body>
+
 </html>
